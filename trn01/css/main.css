@@ -58,13 +58,20 @@
     font-size: 60px;
     font-weight: 900;
     margin: 0 0 30px 0;
-    color: #00f;
+    width: 400px;
+    line-height: 100px;
+    background: var(--text-gradient-default);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #5a9ad3 20%, #bc70ff 80%);
+    /* color: #00f; */
 }
 
 .main_slider strong {
     display: block;
     margin: 0 0 20px 0;
-    color: #fd7e14;
+    color: #bc70ff;
 }
 
 .main_slider .slick-dots {
@@ -75,14 +82,208 @@
     display: inline-block;
     margin: 0 10px 0 0;
     height: 4px;
-    width: 80px;
+    width: 60px;
     background: #333;
 }
 
 .main_slider .slick-dots li.slick-active {
-    background: #fd7e14
+    background: #bc70ff
 }
 
 .main_slider .slick-dots button {
     display: none;
+}
+
+.main_banner figure {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    transition: 0.5s
+}
+
+.main_banner figure:nth-child(1) {
+    background: #da544b
+}
+
+.main_banner figure:nth-child(2) {
+    background: #f4cb4f
+}
+
+.main_banner figure:nth-child(3) {
+    background: #337689
+}
+
+.main_banner figure:nth-child(4) {
+    background: #6fa476
+}
+
+.main_banner figure:hover {
+    height: 220px;
+    transform: translateY(-20px);
+    z-index: 999;
+}
+
+.main_banner {
+    transform: translateY(-50%);
+    height: 200px;
+}
+
+.main_banner figure a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100px;
+    height: 120px;
+    font-size: 13px;
+}
+
+.main_banner figure:nth-child(1) a {
+    background: url(../img/icon_set_w.png) no-repeat 0 0;
+    transition: 0.5s;
+}
+
+
+.main_banner figure:nth-child(2) a {
+    background: url(../img/icon_set_w.png) no-repeat -100px 0;
+    transition: 0.5s;
+}
+
+.main_banner figure:nth-child(3) a {
+    background: url(../img/icon_set_w.png) no-repeat -200px 0;
+    transition: 0.5s;
+}
+
+.main_banner figure:nth-child(4) a {
+    background: url(../img/icon_set_w.png) no-repeat -300px 0;
+    transition: 0.5s;
+}
+
+.main_banner .customer {
+    position: relative;
+    flex: 2;
+    text-align: right;
+    background: #f7f7f7;
+    padding: 50px 30px 0 0;
+    height: 200px;
+}
+
+.main_banner .customer a {
+    display: block;
+    margin: 0 0 15px 0;
+    font-size: 38px;
+    background: var(--text-gradient-default);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #5a9ad3 20%, #bc70ff 80%);
+    font-weight: 700;
+}
+
+.main_banner .customer i {
+    position: absolute;
+    top: -29px;
+    right: 30px;
+    color: #fff;
+    background: #da544b;
+    font-size: 38px;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.main_link {
+    padding: 0 0 100px;
+    background: linear-gradient(to top, #f7f7f7 70%, transparent 30%);
+}
+
+.main_link .container {
+    gap: 30px;
+}
+
+.main_link figure {
+
+    position: relative;
+    flex: 1;
+    border-radius: 50px 0 0 0;
+    overflow: hidden;
+}
+
+.main_link img {
+    max-width: 100%;
+    border-radius: 50px 0 50px 0;
+    margin: 0 0 30px 0;
+}
+
+.main_link h3 {
+    font-size: 23px;
+    /* noto sans는 홀수 픽셀이 더 가독성이 좋다. */
+    margin: 0 0 30px 0;
+}
+
+.main_link h3::after {
+    /* 가상요소 선택자 */
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: #fd7e14;
+    margin: 15px 0;
+}
+
+.main_link figure a {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: rgba(244, 203, 79, 0.7);
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    text-transform: uppercase;
+    transition: 0.5s
+}
+
+.main_link figure a:hover {
+    background: rgba(244, 203, 79, 1);
+    border-radius: 5px;
+}
+
+.main_link p {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer ul {
+    margin: 10px 0;
+}
+
+.footer ul>li {
+    display: inline-block
+}
+
+.footer ul>li~li::before {
+    content: "";
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: middle;
+    width: 1px;
+    height: 10px;
+    background: #333;
+
+}
+
+.footer address {
+    font-style: normal;
 }
