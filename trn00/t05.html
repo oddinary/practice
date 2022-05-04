@@ -14,9 +14,24 @@
             list-style: none;
         }
 
-        li::before {
+        ul>li::before {
+            font-family: xeicon !important;
+            content: "\e960";
+        }
+
+        ul>li::after {
             font-family: xeicon !important;
             content: "\e91c";
+        }
+
+        ol>li::before {
+            font-family: xeicon !important;
+            content: "\e93c";
+        }
+
+        ol>li::after {
+            font-family: xeicon !important;
+            content: "\e960";
         }
 
         h2 {
@@ -55,6 +70,17 @@
         <li>Lorem ipsum dolor sit.</li>
         <li>Lorem ipsum dolor sit.</li>
     </ul>
+    <i class="xi-drag-handle"></i>
+    <i class="xi-bars"></i>
+    <i class="xi-angle-left-min"></i>
+    <ol>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ol>
+    <i class="xi-angle-right-min"></i>
 </body>
 
 </html>

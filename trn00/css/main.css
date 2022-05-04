@@ -31,5 +31,5 @@ li {
 
 li::before {
     font-family: xeicon !important;
-    content: "\e91c";
+    content: "\e960";
 }
