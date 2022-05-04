@@ -667,7 +667,6 @@ responsive 768
         right: 5px;
         height: 3px;
         background: #333;
-        transition: 0.5s;
     }
 
     .mopen span:nth-child(1) {
