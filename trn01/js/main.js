@@ -14,5 +14,6 @@ $(function () {
 
     $('.mopen').on('click', function () {
         $('.gnb').toggleClass('on')
+        $('span').toggleClass('on')
     })
 })

@@ -667,6 +667,7 @@ responsive 768
         right: 5px;
         height: 3px;
         background: #333;
+        transition: 0.5s;
     }
 
     .mopen span:nth-child(1) {
@@ -685,4 +686,19 @@ responsive 768
         top: 21px;
     }
 
+    .mopen span.on:nth-child(1) {
+        display: none;
+    }
+
+    .mopen span.on:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+
+    .mopen span.on:nth-child(3) {
+        transform: rotate(45deg);
+    }
+
+    .mopen span.on:nth-child(4) {
+        display: none;
+    }
 }
