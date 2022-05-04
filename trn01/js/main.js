@@ -6,9 +6,13 @@ $(function () {
     $('.main_slider').slick({
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 1000,
         // 1000 = 1초
         vertical: true,
         dots: true,
     });
+
+    $('.mopen').on('click', function () {
+        $('.gnb').toggleClass('on')
+    })
 })
