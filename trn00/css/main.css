@@ -26,7 +26,7 @@ ul {
 
 li {
     margin: 0 0 0 5px;
-    line-height: 20px;
+    line-height: 23px;
 }
 
 li::before {
@@ -36,8 +36,9 @@ li::before {
 
 li>ul {
     display: flex;
+    border-top: 0px
 }
 
-li>ul>li {
-    flex: 1;
+li>span {
+    margin-right: 60px;
 }
