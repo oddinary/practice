@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업창</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .top_banner {
+            background: #FF0;
+            position: relative;
+
+        }
+
+        .top_banner button {
+            position: absolute;
+            bottom: -25px;
+            right: 100px;
+        }
+
+        .top_banner button.on {
+            transform: rotate(180deg)
+        }
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 350px;
+            /* 모바일환경대비 */
+            width: 350px;
+            height: 400px;
+            background: #F00;
+            transform: translate(-50%, -50%);
+        }
+
+        .popup button {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .side_banner {
+            position: fixed;
+            /* 스크롤바를 없앴다 */
+            width: 350px;
+            height: 400px;
+            right: -300px;
+            top: 300px;
+            background: #00f;
+            transition: 0.5s
+        }
+
+        .side_banner.on {
+            right: 0;
+        }
+
+        .side_banner button {
+            transition: 0.5s;
+        }
+
+        .side_banner button.on {
+            transform: rotate(180deg)
+        }
+
+        .totop {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+            padding: 20px;
+            color: #fff;
+            background: #333;
+            font-size: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            /* 마우스커서 모양 바꾸기 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top_banner">
+        <div class="container">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non explicabo ratione dolore
+            consequuntur soluta quae,
+            quidem accusantium! Praesentium minima aspernatur sunt, quisquam fugiat quibusdam ullam iure sequi suscipit
+            possimus expedita odio omnis eveniet fugit quaerat molestiae mollitia, libero et accusantium natus sapiente!
+            Maiores reprehenderit quae ipsam, voluptas, atque alias ipsum ab quaerat eius repellendus sit quasi ullam,
+            animi
+            recusandae rerum eos provident ad cupiditate quod. Iste magni doloremque error ex quas natus eligendi vero,
+            amet
+            ad autem consectetur voluptas fuga, sint nesciunt laborum, tempore velit optio itaque consequuntur
+            praesentium!
+            Accusantium alias beatae perferendis nam ullam fuga neque dolorem ipsum suscipit.
+        </div>
+        <button>
+            <i class="xi-arrow-top"></i>
+        </button>
+    </div>
+    <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas voluptates hic harum. Provident dolor
+        quidem dolore facere ex, quod harum enim quas praesentium exercitationem tempore libero perspiciatis accusamus
+        doloribus mollitia dolorem at fuga id nam perferendis! Eveniet obcaecati vitae doloremque! Iusto officiis
+        perferendis eveniet illo sed ducimus commodi perspiciatis, vitae adipisci dolorum deleniti sint temporibus
+        accusantium dolor cumque quos earum nobis facere sunt labore odit maiores itaque? Vitae quidem necessitatibus
+        quisquam delectus illum ipsa corrupti obcaecati sapiente sequi id at animi modi, suscipit nobis est fugit ab
+        reiciendis. Dolor, provident similique. Quos eius id amet odio nostrum. Suscipit sapiente nesciunt provident
+        placeat deleniti tenetur aut soluta adipisci saepe ipsam. Dolorem autem consequuntur reiciendis esse iusto vel
+        voluptatum explicabo, velit quia laborum aspernatur mollitia enim molestias suscipit quidem accusantium est
+        obcaecati accusamus a necessitatibus, vero id facilis eos tempora? Ut quisquam odit fuga quas alias accusamus
+        expedita sed minima quaerat tempora ratione vel harum ea deserunt, nobis facere nam dolore id magni illo
+        doloribus. Officiis, recusandae ipsum a, esse necessitatibus minima rem, quibusdam veniam iste rerum cumque
+        facere sequi id reiciendis ratione harum. Eveniet deleniti pariatur, ex laudantium amet consectetur eius cum
+        eligendi impedit nemo blanditiis perspiciatis distinctio incidunt quis nostrum neque ipsum suscipit cupiditate
+        maiores in. Quidem, adipisci illum id a, pariatur fugiat culpa veniam consectetur, earum esse alias modi quasi
+        facilis architecto excepturi maiores quae cumque maxime dolorem! Tempora architecto adipisci voluptatibus
+        temporibus ex modi culpa cupiditate velit minima facilis saepe, veniam iusto incidunt cumque deserunt ipsam,
+        ullam earum illo similique eaque laborum itaque! Exercitationem nemo ab dignissimos, itaque quasi provident non.
+        Sint ducimus labore perspiciatis id nostrum porro provident, nisi maxime. Dolores quam quae nisi architecto
+        libero nobis ducimus, tenetur quo, obcaecati doloremque ratione. Impedit ipsam eligendi inventore hic dolorum
+        reprehenderit debitis! Nostrum adipisci dolor consequuntur accusantium corrupti minus incidunt neque! Atque,
+        sapiente molestiae? Nam, quibusdam error! Alias sequi iure obcaecati, sapiente id officia fugit inventore
+        maiores fuga in voluptas consectetur facere tempora! Unde sapiente perferendis quasi similique tenetur
+        exercitationem modi tempora repellendus, voluptas id, quas velit aliquam ratione in porro beatae saepe odio ea
+        impedit sed odit! Similique perspiciatis corrupti vel mollitia voluptas, quam impedit cum aliquam veniam omnis
+        nesciunt neque totam doloribus repellendus, ullam voluptatibus qui aliquid aut facilis rerum odio delectus
+        eveniet quasi? Molestiae, fuga. Voluptatum ducimus, qui velit aspernatur nemo iure itaque, nulla, quibusdam
+        laudantium magni recusandae ipsa nam corporis? Officia magni quae vel hic laborum corrupti, delectus animi
+        debitis ipsam harum quis maxime, sequi maiores tempore, rerum veritatis reprehenderit dignissimos velit
+        aspernatur cupiditate quibusdam voluptatum libero culpa. Aliquid iusto vero reiciendis id cum explicabo officia
+        tempora itaque fuga, ab est vitae in maiores officiis esse, facilis quis ut molestiae eveniet. Numquam facilis,
+        incidunt quidem laboriosam commodi asperiores voluptates laborum, eaque quasi minima debitis ea aperiam,
+        inventore laudantium tempore qui illum ducimus. Eligendi in inventore, suscipit aspernatur, porro distinctio
+        fugiat commodi tenetur quae harum totam ex ut, consectetur tempore voluptatem sequi recusandae alias est cumque.
+        Voluptates laboriosam minus, delectus labore distinctio ex sed optio. Quo earum corporis nemo assumenda
+        doloribus molestiae velit iste aliquid dolore maiores eaque, provident impedit, error a! Harum, quo aut? Iure
+        ratione expedita modi animi nihil repellat commodi recusandae ab explicabo atque architecto porro distinctio est
+        aut, ad cumque placeat natus molestias at, vero, nesciunt corrupti. Deleniti praesentium delectus cum sed fuga
+        ipsum beatae laborum cupiditate itaque illo, quaerat eaque qui odio natus eos voluptatibus aspernatur autem
+        animi suscipit. At cumque dolore praesentium voluptatum beatae dolores est pariatur, atque sequi iste laborum
+        labore incidunt provident, dignissimos, id facere fuga! Dolore fugit, nisi doloremque distinctio impedit sed nam
+        architecto, cupiditate deserunt, iste cumque soluta quas. Aliquam nihil corporis at dolorem sequi accusamus
+        dolor dignissimos laborum beatae deserunt explicabo sint consequuntur, ipsa quam. Nulla tempora, ea omnis,
+        possimus deleniti asperiores, dolores pariatur corrupti itaque animi veritatis explicabo a. Sit dolores
+        consequuntur eius, quos tempora laboriosam. Excepturi, ratione iusto. Perferendis quia explicabo, esse molestias
+        placeat impedit sapiente excepturi nihil aliquid possimus corporis ea quaerat neque recusandae hic quisquam ex
+        culpa assumenda voluptates? Pariatur incidunt beatae culpa ab mollitia quibusdam, asperiores, magni obcaecati
+        eveniet facere doloremque accusantium aperiam libero nesciunt dolor ipsum sed perferendis eum, nisi quos quo eos
+        odio voluptas. Distinctio recusandae sint libero voluptatum. Asperiores illo, at reprehenderit cumque a hic,
+        quisquam ea voluptatum ut beatae rerum iste. Sunt, voluptates voluptatum! Aperiam id repellat consequatur et
+        veniam blanditiis eos quia optio quam consequuntur, eligendi distinctio quos nulla ex iusto, saepe soluta
+        suscipit. Eligendi, distinctio animi nobis inventore eum maiores pariatur? Id porro iusto nam maxime fuga
+        temporibus cum dolores dolorum rerum quis delectus, non totam qui modi sed dignissimos molestias, aspernatur
+        itaque voluptatibus consequatur ducimus nemo. Possimus quidem, maiores error ab commodi inventore accusantium
+        dignissimos debitis et unde accusamus laboriosam. Doloremque molestias rerum est odit, tempora optio et,
+        pariatur ipsa corporis sint asperiores facilis sit mollitia excepturi inventore nemo facere quaerat aut fugit
+        labore neque alias similique laborum. Praesentium necessitatibus velit quae sit est quo quia magni deserunt
+        sapiente dignissimos facilis incidunt dolor laudantium reiciendis quibusdam unde, sunt quidem voluptates!
+        Aliquam impedit perspiciatis eligendi voluptatum officia possimus soluta nisi neque vel ducimus, iusto alias
+        dolore ab nostrum id culpa nihil voluptas consequuntur et dolor ex eum commodi sed? Aperiam, eveniet! Tenetur
+        assumenda ipsam nisi voluptatibus, esse porro quasi modi impedit provident magnam illum illo vitae maiores
+        accusamus nulla voluptates? Doloremque eius officia dolores, dolorum id, consectetur placeat quas ex assumenda,
+        itaque maiores! Assumenda, excepturi necessitatibus explicabo similique dolorum rem maxime voluptatibus,
+        obcaecati laboriosam blanditiis vero, accusantium sit est? Accusantium explicabo saepe ea quod, quaerat expedita
+        amet corrupti. Dolorem dolorum nihil aut hic ut, quae, itaque quis, odit beatae omnis nisi expedita molestiae
+        obcaecati laboriosam tempore cum dolores delectus repellat totam. Hic soluta vitae minima ab voluptates
+        expedita, sed facere dignissimos est iusto natus corrupti officiis ducimus eius quasi dolores. Cupiditate
+        aliquam odit vero placeat voluptate explicabo dicta animi labore, iste ad facilis quia incidunt commodi officia
+        mollitia doloribus tenetur. Corrupti vitae tempora explicabo excepturi quidem beatae voluptatum doloremque
+        voluptatem odio odit?
+    </section>
+
+    <div class="side_banner">
+        <button>
+            <i class="xi-arrow-left"></i>
+        </button>
+    </div>
+
+    <div class="popup01 popup">
+        <button>Close</button>
+    </div>
+    <div class="popup02 popup">
+        <button>Close</button>
+    </div>
+    <div class="popup03 popup">
+        <button>Close</button>
+    </div>
+    <i class="xi-arrow-top totop"></i>
+    <script src="../trn01/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $('.popup button').on('click', function () {
+            $(this).parent().hide();
+        })
+
+        $('.top_banner button').on('click', function () {
+            $('.container').slideToggle();
+            $(this).toggleClass('on')
+        })
+
+        $('.side_banner button').on('click', function () {
+            $(this).parent().toggleClass('on')
+            $(this).toggleClass('on')
+        })
+
+        $('.totop').on('click', function () {
+            $('html,body').animate({ scrollTop: 0 }, 100)
+        })
+
+        $(window).on('scroll', function () {
+            let sct = $(window).scrollTop();
+            sct > 300 ? $('.totop').fadeIn() : $('.totop').fadeOut();
+            // if (sct > 300) {
+            //     $('.totop').fadeIn();
+            // } else {
+            //     $('.totop').fadeOut();
+            // } 라는 뜻
+        })
+        // const BTN = document.querySelectorAll('.popup button')
+        // console.log(BTN);
+        // BTN.forEach(el => {
+        //     el.addEventListener('click', function () {
+        //         el.parentElement.style.display = 'none';
+        //     })
+        // })
+
+        // document.querySelector('.popup button').addEventListener('click', function () {
+        //     document.querySelector('.popup').style.display = 'none';
+        //     // this.parentElement.style.display = 'none';
+        // })
+    </script>
+</body>
+
+</html>

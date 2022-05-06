@@ -25,11 +25,16 @@ ul {
 }
 
 li {
+    display: flex;
     margin: 0 0 0 5px;
-    line-height: 1.2em;
+    line-height: 20px;
 }
 
 li::before {
     font-family: xeicon !important;
     content: "\e960";
+}
+
+li>span {
+    flex: 1;
 }
