@@ -35,6 +35,6 @@ li::before {
     content: "\e960";
 }
 
-li>span {
+li>strong {
     flex: 1;
 }
