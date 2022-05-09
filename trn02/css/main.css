@@ -222,3 +222,64 @@ nav>ul>li~li::before {
 .main_visual .slick-dots button {
     display: none;
 }
+
+
+
+
+
+
+/* 메인배너 */
+
+.main_banner {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.main_banner h4 {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    margin: 0 0 10px 0;
+}
+
+.main_banner>p {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+.main_banner .container {
+    display: flex;
+    gap: 30px;
+}
+
+.main_banner .container figure {
+    overflow: hidden;
+}
+
+.main_banner .container img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.main_banner .container img:hover {
+    transform: scale(1.5);
+}
+
+.main_banner .container p {
+    margin: 15px 0;
+}
+
+.main_banner .container a {
+    display: inline-block;
+    border: 1px solid #333;
+    vertical-align: center;
+    line-height: 30px;
+    padding: 0 30px;
+}
+
+.main_banner .container a:hover {
+    background: red;
+    color: #fff;
+}
