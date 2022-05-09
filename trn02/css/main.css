@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top_banner {
+    padding: 25px 0;
+    background: #f1f1f1;
+}
+
+.top_banner .container {
+    display: block;
+}
+
+.top_banner h2 {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 10px 0;
+}
+
+.top_banner p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.top_banner a {
+    padding: 0 15px 2px 15px;
+    border: 1px solid #333;
+    margin: 0 0 0 20px;
+}
+
+.top_banner i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background: #333;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.gnb {
+    line-height: 100px;
+}
+
+.gnb nav {
+    margin: 0 0 0 auto;
+}
+
+.gnb form {
+    margin: 0 0 0 50px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    margin: 0 15px;
+}
+
+#searchForm input[type='text'] {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    padding: 5px 0;
+}
+
+#searchForm button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 28px;
+    color: #333;
+}
+
+
+
+
+
+/* 메인 비주얼 */
+
+.main_visual figure {
+    position: relative;
+    height: 600px;
+}
+
+.main_visual .item01 {
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover
+}
+
+.main_visual .item02 {
+    background: url(../img/mainvisual02.jpg) no-repeat center center/cover
+}
+
+.main_visual .item03 {
+    background: url(../img/mainvisual03.jpg) no-repeat center center/cover
+}
+
+.main_visual .container {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.main_visual figure h3 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    text-shadow: 0 0 5px #333;
+    /* 우측 아래 블러 색상 */
+}
+
+.main_visual figure.item02 h3 {
+    color: #333;
+    text-shadow: 0 0 2px #fff;
+}
+
+.main_visual figure p {
+    font-size: 13px;
+    font-weight: 300px;
+    margin: 0 0 20px 0;
+}
+
+.main_visual figure.item02 p {
+    color: #333;
+    text-shadow: 0 0 5px #fff;
+}
+
+.main_visual figure a {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #333;
+    padding: 10px 30px;
+}
+
+.main_visual figure h3 {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.main_visual figure.on h3 {
+    transform: translateY(0);
+    transition: 0.5s;
+    /* 백을 보장하지 않기위해 여기에 붙임 */
+    opacity: 1;
+}
+
+.main_visual figure p {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.main_visual figure.on p {
+    transform: translateY(0);
+    transition: 0.5s 0.5s;
+    /* 백을 보장하지 않기위해 여기에 붙임 */
+    opacity: 1;
+}
+
+.main_visual figure a {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.main_visual figure.on a {
+    transform: translateY(0);
+    transition: 0.5s 1s;
+    /* 백을 보장하지 않기위해 여기에 붙임 */
+    opacity: 1;
+}
+
+.main_visual .slick-dots {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main_visual .slick-dots li {
+    display: inline-block;
+    width: 80px;
+    height: 5px;
+    background: #333;
+    margin: 0 5px;
+}
+
+.main_visual .slick-dots li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background: red;
+}
+
+.main_visual .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 3s;
+}
+
+.main_visual .slick-dots button {
+    display: none;
+}
