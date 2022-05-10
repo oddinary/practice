@@ -175,7 +175,6 @@ nav>ul>li~li::before {
 .main_visual figure.on p {
     transform: translateY(0);
     transition: 0.5s 0.5s;
-    /* 백을 보장하지 않기위해 여기에 붙임 */
     opacity: 1;
 }
 
@@ -187,7 +186,6 @@ nav>ul>li~li::before {
 .main_visual figure.on a {
     transform: translateY(0);
     transition: 0.5s 1s;
-    /* 백을 보장하지 않기위해 여기에 붙임 */
     opacity: 1;
 }
 
@@ -232,43 +230,68 @@ nav>ul>li~li::before {
 
 .main_banner {
     padding: 100px 0;
+    /* 요소와 라인은 충분한 간격을 줍니다 100~150 넓으면 200~300*/
+    /* 박스사이의 간격을 줄 때 마진은 겹치기 때문에 패딩으로 준다*/
     text-align: center;
 }
 
-.main_banner h4 {
+section h2 {
     font-size: 20px;
     font-weight: 100;
     letter-spacing: 10px;
     margin: 0 0 10px 0;
 }
 
-.main_banner>p {
-    display: inline-block;
+/* 타이포는 두껍고 크게 + 얇고 작게 */
+section>p {
     font-size: 15px;
     font-weight: 300;
     margin: 0 0 30px 0;
 }
 
 .main_banner .container {
-    display: flex;
     gap: 30px;
 }
 
+/* float:left
+    width:33.3333%
+    padding: 0 15px;
+    
+.main_banner .container::after {
+    content:"";
+    display:block;
+    clear:both;
+    
+    같은 방법도 가능
+    */
+
 .main_banner .container figure {
+    flex: 1;
+}
+
+.main_banner figure .inbox {
     overflow: hidden;
+    border-radius: 25% 75% 78% 22% / 72% 44% 56% 28%;
+    /* border-radius generator */
+    transition: 0.5s;
 }
 
 .main_banner .container img {
-    width: 100%;
+    max-width: 100%;
     transition: 0.5s;
 }
 
 .main_banner .container img:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
-.main_banner .container p {
-    margin: 15px 0;
+.main_banner figure:hover .inbox {
+    border-radius: 20px;
+}
+
+.main_banner .container strong {
+    display: block;
+    padding: 20px 0;
 }
 
 .main_banner .container a {
@@ -282,4 +305,76 @@ nav>ul>li~li::before {
 .main_banner .container a:hover {
     background: red;
     color: #fff;
+}
+
+.fixed_bg {
+    padding: 100px 0;
+    text-align: center;
+    color: #FFF;
+    background: url(../img/mainvisual03.jpg) no-repeat fixed center center/cover;
+    /* 반복 고정 위치x 위치Y/커버여부 */
+    filter: grayscale(1);
+    /* ie에서 안먹음 */
+}
+
+.fixed_bg i {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin: 0 0 0 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.fixed_bg span {
+    vertical-align: middle;
+    width: 100px;
+    background: red;
+}
+
+.movie {
+    padding: 100px 0;
+}
+
+.movie .container {
+    gap: 50px;
+}
+
+.movie .container figure {
+    flex: 1;
+}
+
+.movie .container .dec {
+    flex: 1;
+    padding: 100px 0;
+}
+
+.movie video {
+    max-width: 100%;
+}
+
+.movie .dec i {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin: 0 5px 0 0;
+}
+
+.play {
+    padding: 20px 0;
+}
+
+.youtube {
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+    filter: grayscale(0.5)
+}
+
+.youtube i {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 5px;
+    font-size: 25px;
+    cursor: pointer;
 }
