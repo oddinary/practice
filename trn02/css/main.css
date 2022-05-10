@@ -437,7 +437,34 @@ section>p {
     display: none;
 }
 
-.sub_slider .slick-arrow {
+.product_slider {
+    position: relative;
+}
+
+.product_slider i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    background: #333;
+}
+
+.product .xi-arrow-left {
+    margin-left: -700px;
+}
+
+.product .xi-arrow-right {
+    margin-left: 700px;
+}
+
+
+/* .sub_slider .slick-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -474,4 +501,4 @@ section>p {
     background: #333;
     border-radius: 50%;
     color: #fff;
-}
+} */

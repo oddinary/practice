@@ -38,12 +38,30 @@ $(function () {
     })
 
     $('.sub_slider').slick({
+        arrows: false,
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
         dots: true,
         pauseOnFocus: false,
     });
+
+
+    $('.product i.xi-arrow-left').on('click', function () {
+        $('.sub_slider').slick('slickPrev');
+    })
+    $('.product i.xi-arrow-right').on('click', function () {
+        $('.sub_slider').slick('slickNext');
+    })
+
+
+
+    // $(".product i.xi-arrow-left").on("click", function () {
+    //     $(".sub_slider").slick("slickPrev");
+    // });
+    // $(".product i.xi-arrow-right").on("click", function () {
+    //     $(".sub_slider").slick("slickNext");
+    // });
 
     //////////////////////////////////////////////////////////////////////////
 })
