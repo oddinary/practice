@@ -379,6 +379,15 @@ section>p {
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
 .sub_banner {
     padding: 100px 0;
     text-align: center;
@@ -394,7 +403,10 @@ section>p {
 
 .sub_slider {
     display: flex;
-    gap: 30px;
+}
+
+.sub_banner figure {
+    padding: 0 15px;
 }
 
 .sub_slider figure img {
@@ -425,6 +437,31 @@ section>p {
     display: none;
 }
 
-.sub_slider .slick-next-slick-arrow {
-    display: none;
+.sub_slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sub_slider .slick-prev {
+    width: 30px;
+    height: 30px;
+    z-index: 999;
+}
+
+.sub_slider .slick-prev::before {
+    font-family: xeicon;
+    content: "\e906";
+
+}
+
+.sub_slider .slick-next {
+    width: 30px;
+    height: 30px;
+    right: 0;
+}
+
+.sub_slider .slick-next::before {
+    font-family: xeicon;
+    content: "\e907";
 }
