@@ -27,7 +27,7 @@ $(function () {
     })
 
     $("#myMovie").YTPlayer({
-        videoURL: 'http://youtu.be/BsekcY04xvQ', containment: '.youtube', autoPlay: true, mute: true, startAt: 0, opacity: 1, showControls: false, playOnlyIfVisible: true
+        videoURL: 'https://youtu.be/s36WRbd3A_Y', containment: '.youtube', autoPlay: true, mute: true, startAt: 0, opacity: 1, showControls: false, playOnlyIfVisible: true
     });
 
     $('.youtube i:nth-of-type(1)').on('click', function () {
