@@ -37,5 +37,13 @@ $(function () {
         $('#myMovie').YTPPlay();
     })
 
+    $('.sub_slider').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: true,
+        pauseOnFocus: false,
+    });
+
     //////////////////////////////////////////////////////////////////////////
 })

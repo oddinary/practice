@@ -378,3 +378,53 @@ section>p {
     font-size: 25px;
     cursor: pointer;
 }
+
+.sub_banner {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.sub_banner .container {
+    display: block;
+}
+
+.sub_banner .container p {
+    padding: 0 0 30px 0;
+}
+
+.sub_slider {
+    display: flex;
+    gap: 30px;
+}
+
+.sub_slider figure img {
+    width: 100%;
+}
+
+.sub_slider .slick-dots {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub_slider .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #333;
+    margin: 0 5px;
+}
+
+.sub_slider .slick-dots li.slick-active {
+    background: red;
+}
+
+.sub_slider .slick-dots button {
+    display: none;
+}
+
+.sub_slider .slick-next-slick-arrow {
+    display: none;
+}
