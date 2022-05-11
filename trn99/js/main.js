@@ -12,4 +12,9 @@ $(function () {
         pauseOnHover: false,
         pauseOnFocus: false,
     });
+
+    $('.warning i').on('click', function () {
+        $(this).parent().hide();
+    })
 })
+
