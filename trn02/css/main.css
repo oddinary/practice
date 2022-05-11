@@ -468,17 +468,18 @@ section>p {
 .product small {
     position: relative;
     display: inline-block;
-    border-top: 20px solid #F00;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #F00;
-    border-left: 100px solid #F00;
+    border: 17px solid #F00;
+    border-radius: 50%;
+
 }
 
 .product span {
     position: absolute;
-    top: -10px;
-    left: -80px;
-    color: #fff;
+    font-weight: 700;
+    letter-spacing: normal;
+    background: linear-gradient(130deg, #fff 34%, #000 34%);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 
