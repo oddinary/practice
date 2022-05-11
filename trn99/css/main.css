@@ -179,3 +179,69 @@ h1 a {
     height: 30px;
 
 }
+
+
+.tab_menu {
+    padding: 100px 0;
+}
+
+/*////////////////////////////////////배너*/
+.banner {
+    padding: 100px 0;
+    background: url(../img/bg_content.gif);
+    display: flex;
+    color: #FFF;
+}
+
+.banner_cont01 {
+    position: relative;
+    height: 300px;
+    flex: 1;
+    background: url(../img/bg_utilization.png) no-repeat;
+    padding: 30px;
+    width: 400px;
+    margin-left: 55px;
+}
+
+.banner_cont02 {
+    position: relative;
+    flex: 2;
+    background: url(../img/img_subway_history.png)no-repeat;
+    padding: 20px;
+}
+
+.banner h3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.banner a {
+    display: block;
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+
+}
+
+.banner_cont01 a {
+    left: 30px;
+    bottom: 42px;
+    width: 92px;
+}
+
+.banner_cont02 h3 {
+    padding-left: 380px;
+}
+
+.banner_cont02 a {
+    left: 400px;
+    bottom: 42px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 142px;
+}

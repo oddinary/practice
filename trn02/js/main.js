@@ -42,26 +42,30 @@ $(function () {
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
+        centerMode: true,
         dots: true,
         pauseOnFocus: false,
+        autoplay: true,
     });
 
 
-    $('.product i.xi-arrow-left').on('click', function () {
+    $('.product .s_left').on('click', function () {
         $('.sub_slider').slick('slickPrev');
     })
-    $('.product i.xi-arrow-right').on('click', function () {
+    $('.product .s_right').on('click', function () {
         $('.sub_slider').slick('slickNext');
     })
 
+    $('.tab_link>li').on('click', function () {
+        var idx = $(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.tab_content>li').eq(idx).addClass('on').siblings().removeClass('on');
+    })
 
-
-    // $(".product i.xi-arrow-left").on("click", function () {
-    //     $(".sub_slider").slick("slickPrev");
-    // });
-    // $(".product i.xi-arrow-right").on("click", function () {
-    //     $(".sub_slider").slick("slickNext");
-    // });
+    $('.footer #link').on('change', function () {
+        var lik = $(this).val();
+        if (lik) window.open(lik);
+    })
 
     //////////////////////////////////////////////////////////////////////////
 })

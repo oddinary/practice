@@ -9,5 +9,7 @@ $(function () {
         autoplaySpeed: 2000,
         // 1000 = 1초
         dots: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     });
 })
