@@ -476,8 +476,10 @@ section>p {
 .product span {
     position: absolute;
     font-weight: 700;
+    top: -1px;
+    left: -1px;
     letter-spacing: normal;
-    background: linear-gradient(130deg, #fff 34%, #000 34%);
+    background: linear-gradient(125deg, #fff 35%, #000 37%);
     color: transparent;
     -webkit-background-clip: text;
 }
