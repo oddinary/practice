@@ -846,7 +846,7 @@ section>p {
 
     .product small {
         position: relative;
-        display: inline-block;
+        display: none;
         border: 17px solid #F4C100;
         border-radius: 50%;
 
