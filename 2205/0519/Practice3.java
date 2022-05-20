@@ -12,7 +12,7 @@ public class Practice3 {
 		int c = (x % 100) / 10;
 		int d = x % 10;
 		
-		System.out.println("정수는 = " + a + b + c + d );
+		System.out.println("입력한 정수는 = " + a + b + c + d );
 		
 		System.out.println(a == d && b == c);
 		
