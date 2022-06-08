@@ -5,22 +5,27 @@ import java.util.Scanner;
 public class Main6 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int i = 1;
 		int[] integer = new int[5];
+		int i = 0;
 		while (true) {
-			if(integer[i] >= 0) {
-				System.out.print("정수를 입력하세요: ");
-				integer[i] = scan.nextInt();
-			}
-			else
+			System.out.print("정수를 입력하세요: ");
+			int n = scan.nextInt();
+			if (n < 0) {
 				break;
+			}
+			integer[i] = n;
 			
+			i++;
+			
+			if(i ==5) {
+				i = 0;
+			}
 		}
-		
+			
 		System.out.println("음수입력됨, 최근 5개의 수를 출력합니다.");
 		
 		for (int j = integer.length - 1; j >= 0 ; j--)	{
-			System.out.print(integer[j]);
+			System.out.print(integer[j] + " ");
 		}
 	
 	}
