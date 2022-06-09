@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*도서 관리 프로그램
@@ -22,7 +23,7 @@ public class Main {
 	// 일단 도서 정보를 출력하는 프로그램
 	static void printInfo(Book[] arr) {
 		for (int i = 0; i < arr.length; i++) {
-			if (arr[i].getName().equals("null")) {	
+			if (arr[i] == (null)) {	// 배열의 참조가 null인지가 아니라 배열의 원소가 null인지를 확인해야 한다.
 				break;
 			}
 			else { System.out.println((i + 1) + ": " + arr[i].getName() + " / " + arr[i].getAuthor() + " / "
@@ -56,7 +57,7 @@ public class Main {
 			}
 			System.out.println("오름차순으로 출력");
 			for (int k = 0; k < 5; k++) {
-				System.out.println("'" + arr[k].getInfo() + "' ");
+				System.out.print("'" + arr[k].getName() + "' ");
 			}
 			break;
 		}
@@ -78,7 +79,7 @@ public class Main {
 			}
 			System.out.println("내림차순으로 출력");
 			for (int k = 0; k < 5; k++) {
-				System.out.println("'" + arr[k].getInfo() + "' ");
+				System.out.print("'" + arr[k].getName() + "' ");
 			}
 			break;
 		}
@@ -191,15 +192,26 @@ public class Main {
 		}
 	}
 	
-	static void Inputbooks(Book[] arr) {
+	public static Book[] copyArray(Book[] arr) {
+		Book[] copy = new Book[arr.length + 1];
+
+		for (int i = 0; i < arr.length; i++) {
+			copy[i] = arr[i];
+		}
+
+		return copy;
+	}
+	
+	static void Inputbooks(Book[] arr,int a) {
+		copyArray(arr);
 		Scanner scan = new Scanner(System.in);
 		System.out.println("입력을 원하는 책의 정보를 입력하세요");
-		arr[5] = new Book(scan.nextLine(),scan.nextLine(),scan.nextLine(),scan.nextLine(),scan.nextInt());
+		arr[a] = new Book(scan.nextLine(),scan.nextLine(),scan.nextLine(),scan.nextLine(),scan.nextInt());
 	}
 	
 	public static void main(String[] args) {
 
-		int numBooks = 9;
+		int numBooks = 5;
 		Book[] books = new Book[numBooks];
 		books[0] = new Book("작별인사", "김영하", "복복서가", "장편소설", 12600);
 		books[1] = new Book("불편한 편의점", "김호연", "나무옆의자", "장편소설", 12600);
@@ -226,12 +238,12 @@ public class Main {
 				continue;
 			}
 			case 4: {
-				Inputbooks(books);
+				Inputbooks(books , numBooks);
 				continue;
 			}
 			case 5: {
 				printInfo(books);
-				continue;
+				break;
 						}
 			case 0: {
 				break;
