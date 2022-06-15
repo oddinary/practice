@@ -1,8 +1,9 @@
+import java.util.Comparator;
 
-public class Member {
-	private String name;
-	private double height;
-	private double weight;
+public class Member{
+	String name;
+	double height;
+	double weight;
 	
 	public Member(String name, double height, double weight) {
 		this.name = name;
@@ -37,7 +38,7 @@ public class Member {
 	}
 	
 	public double getBmi() {
-		return  weight / (height * height);
+		return  Math.round(weight / (height * height)*100)/100.0;
 	}
 	
 	public String getState() {
@@ -69,6 +70,5 @@ public class Member {
 	public String toString() {
 		return "Member [이름=" + name + ", 키(M)=" + height + ", 몸무게(kg)=" + weight + ", bmi=" + getBmi() + ", 비만지수=" + getState() + "]";
 	}
-	
-	
+
 }
