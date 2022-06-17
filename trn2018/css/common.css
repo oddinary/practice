@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+
+@import url(https://fonts.googleapis.com/css?family=Galada|Nanum+Gothic|Nanum+Myeongjo);
+   /*원하는 글꼴의 링크를 걸어줌  */
+   
+.font_gothic {font-family: 'Nanum Gothic', sans-serif;}
+.font_myeong {font-family: 'Nanum Myeongjo', serif;}
+.font_galada {font-family: 'Galada', cursive;}
+.font_fugaz{font-family: 'Fugaz One', cursive;}
+.font_mont{font-family: 'Montserrat', sans-serif;}
+.font_quicksand{font-family: 'Quicksand', sans-serif;}
+.font_2p{font-family: 'Press Start 2P', cursive;}
+
+* {margin:0; padding:0;}
+body{font-size:16px; line-height:1.1em; color:#6f6f6f;
+font-family: 'Quicksand', sans-serif;height: 100vh;}
+ul, ol, li{list-style-type:none}
+img, fieldset{border:none;vertical-align:middle;}
+hr {clear:both;border:none}
+a {color:inherit;text-decoration:none}
+table{border-collapse:collapse}
+input {color:inherit;font-size:inherit;font-family:inherit}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+#wrap {width:100vw;height:100vh;}
+#header {position:relative;
+     width:50%;height:100vh;
+     float:left;
+     color:#355c7d;
+     background:url(../img/back2.png) right no-repeat;
+     background-color:#f0f0f0;
+}
+#section {
+     position:relative;overflow-x:hidden;
+     width:50%;height:100vh;
+     float:left;
+     background:url(../img/back1.png) right no-repeat;
+     background-color:#f67280;
+}
+#footer {}
+/***********header************/
+#title {
+     text-align:center;
+     font-size:2.6em;font-family: 'Fugaz One', cursive;
+     font-weight:800;line-height:1.1em;
+     padding:150px 0;
+}
+#me {position:absolute;bottom:5%;left:5%;}
+#me h1 {font-size:2.5em;font-weight:normal;line-height:1.1em;}
+#me p {font-size:2em;padding-left:20px;}
+
+/***********section************/
+#navi {
+     font-size:2em;color:#355c7d;line-height:1.1em;
+     padding:30px 50px 0 0;text-align:right;
+}
+#navi li {
+     display:inline-block;
+     padding-left:80px;padding-bottom:3px;
+     cursor: pointer;
+}
+#navi li a:hover{border-bottom:2px solid #355c7d}
+.on{border-bottom:2px solid #355c7d}
+#section div {
+     color:#fff;display:block;
+     box-sizing:border-box;
+     padding:50px 0 50px 100px;
+}
+#section h3 {
+     font-size:1.5em;
+     padding-bottom:30px;
+}
+#project {
+     position:absolute;left:0;top:150px;
+     width:100%;
+     font-size:2em; line-height:2em;
+     padding-bottom:3px;
+}
+#project a:hover{border-bottom:2px solid #f8b195}
+#about {
+     position:absolute;left:100%;top:calc(50% - 200px);
+     width:100%;
+     font-size:1.5em;line-height:1.5em;
+}
+#about img {
+     padding-top: 20px;
+     width: 260px !important;
+}
+#contact {
+     position:absolute;left:300%;top:calc(50% - 200px);
+     width:100%;
+     font-size:1.5em;line-height:1.5em;
+}
+#section img {width:60%;}
+/***********footer************/
+
+@media (max-width:1400px){
+     #navi{font-size:1.7em;}
+     #navi li {padding-left:30px;}
+}
+@media (max-width:979px){
+     #header {width:100%;height:500px;}
+     #section {width:100%;height:500px;}
+     #navi{font-size:2em;}
+     #navi li {padding-left:80px;}
+}
+@media (max-width:679px){
+     #navi{font-size:1.5em;}
+     #navi li {padding-left:0;display:block;}
+     #about, #contact{font-size:1.3em;top:150px;}
+     #section div{
+          padding-left:30px;padding-top:0}
+}
+@media (max-width:479px){
+     #title {
+     font-size:2em;font-family: 'Fugaz One', cursive;
+     font-weight:800;line-height:1.1em;
+     padding:150px 0;}
+     #me h1 {font-size:1.8em;font-weight:normal;line-height:1.1em;}
+     #me p {font-size:1.5em;padding-left:20px;}
+}

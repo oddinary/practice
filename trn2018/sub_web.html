@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat:200|Press+Start+2P|Quicksand:300" rel="stylesheet">
+<title>nevertheless</title>
+  <!--[if lt IE 9]>
+      <script src="./js/html5.js"></script>
+   <![endif]-->
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/sub.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/sub_style.css" />
+
+</head>
+
+<body>
+<div id="wrap">
+    <div id="title">
+    <a href="index.html"><h2>NEVERTHELESS</h2></a>
+    </div>
+    <div id="sub_me">
+    <h1>Jin ho Lee</h1>
+    <p>- design & code</p>
+    </div>
+    <ul id="navi">
+      <li><a id="go-project">Project</a></li>
+      <li><a id="go-about">About</a></li>
+      <li><a id="go-contact">Contact</a></li>
+    </ul>
+  <section id="section">     
+    <div id="project">
+      <ul>
+        <li><a href="sub_graphic.html">Graphic</a></li>
+        <li><a href="#">Web</a></li>
+        <li><a href="sub_ui.html">UI</a></li>
+     </ul>
+   </div>
+    <div id="about">
+      <h3>About</h3>
+     <ul>
+        <li>birth : 92.12.3</li>
+        <li>major : 계명대학교 패션디자인</li>
+        <li>Call : +82)10-2027-4039</li>
+        <li><img src="img/program.png"></li>
+      </ul>
+    </div>
+    <div id="contact">
+      <h3>Contact</h3>
+      <ul>
+        <li>E-mail : <a href="">horang1203@gmail.com</a></li>
+        <li>Call : <a href="phone">010-2027-4039</a></li>
+        <li>kakao : hosik92</li>
+      </ul>
+    </div>
+    </section>
+    <hr>
+  
+  <section class="demo-2">
+    <h3>Web</h3>
+
+    <div class="content">
+      <div class="content_web">
+			<h3>웹디자인 & 퍼블리싱</h3>
+        <div class="content_div"><!--이미지 사이즈 : -->
+          <a href="http://horang921203.dothome.co.kr/bnsc" class="img-wrap" target="_blank"><img src="" alt="작업중"/></a>
+          <div class="info">
+            <h4>부산국민체육센터</h4>
+          <p>
+            부산국민체육센터 리뉴얼 작업(작업중)<br><br>
+            photoshop/illustrator : 작업중<br>
+            hard-coding : 작업중<br>
+            Gnuboard : 작업중
+          </p>
+          </div>
+          <hr>          
+        </div>
+
+         <div class="content_div"><!--이미지 사이즈 : -->
+          <a href="https://blog.naver.com/horang_ei" class="img-wrap" target="_blank"><img src="img/thumb/web/5_kirine.png" alt="leather_shop"/></a>
+          <div class="info">
+            <h4>Kirine 가죽공방</h4>
+          <p>가상의 가죽공방 홈블로그 작업입니다.<br><br>
+            photoshop/illustrator : 100%<br>
+            hard-coding : 20%
+          </p>
+          </div>
+          <hr>          
+        </div>
+
+        <div class="content_div"><!--이미지 사이즈 : -->
+          <a href="http://horang1203.godomall.com/" class="img-wrap" target="_blank"><img src="img/thumb/web/4_sneak.png" alt="sneakwars_site"/></a>
+          <div class="info">
+            <h4>SNEAK WARS</h4>
+          <p>
+            운동화 전문 쇼핑몰로 기존의 스킨에 로고, 이미지만 제작 한 작업입니다.<br><br>
+            photoshop/illustrator : 90%<br>
+            hard-coding : 10%
+          </p>
+          </div>
+          <hr>          
+        </div>
+
+			<h3>only 퍼블리싱</h3>
+        <div class="content_div">
+					<a href="http://horang1203.dothome.co.kr" class="img-wrap" target="_blank"><img src="img/thumb/web/2_hollys.png" alt="hollys site"/></a>
+          <div class="info">
+            <h4>hollys coffee</h4>
+          <p>
+           hard-coding : 100%
+          </p>
+          </div>
+          <hr>
+        </div>
+      </div>
+		</div>
+		<!-- /content -->
+
+	</div>
+  </section>
+  <footer id="footer">
+  </footer>
+</div>
+</body>
+<script src="js/modernizr-custom.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  $(function(){
+    $('#navi').stop().click(function(){
+      $('#section').stop().slideDown();
+      $('#navi').css('color','#fff');
+    });
+    $('#navi').stop().mouseenter(function(){
+      $('#section').stop().slideDown();
+      $('#navi').css('color','#fff');
+    });
+    $('#section').stop().mouseleave(function(){
+      $('#section').stop().slideUp();
+      $('#navi').css('color','#355c7d');
+    });
+    $('#section').stop().click(function(){
+      $('#section').stop().slideUp();
+      $('#navi').css('color','#355c7d');
+    });
+    $('#navi li').each(function(){
+       var allLi = $(this).find('a');
+       $('#navi li a').click(function(){
+         allLi.removeClass('sub_on');
+         $(this).addClass('sub_on')
+       })
+     })
+  });
+  $(function(){
+    $('#go-project').click(function() {
+     $('#project').stop().animate({left:0},1000);
+     $('#about').stop().animate({left:'100%'},1000);
+     $('#contact').stop().animate({left:'200%'},1000);
+    });
+    $('#go-about').click(function() {
+     $('#project').stop().animate({left:'-100%'},1000);
+     $('#about').stop().animate({left:0},1000);
+     $('#contact').stop().animate({left:'100%'},1000);
+    });
+    $('#go-contact').click(function() {
+     $('#project').stop().animate({left:'-200%'},1000);
+     $('#about').stop().animate({left:'-100%'},1000);
+     $('#contact').stop().animate({left:0},1000);
+    });
+  })
+</script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		(function() {
+			var support = { transitions: Modernizr.csstransitions },
+				// transition end event name
+				transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+				transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+				onEndTransition = function( el, callback ) {
+					var onEndCallbackFn = function( ev ) {
+						if( support.transitions ) {
+							if( ev.target != this ) return;
+							this.removeEventListener( transEndEventName, onEndCallbackFn );
+						}
+						if( callback && typeof callback === 'function' ) { callback.call(this); }
+					};
+					if( support.transitions ) {
+						el.addEventListener( transEndEventName, onEndCallbackFn );
+					}
+					else {
+						onEndCallbackFn();
+					}
+				};
+
+			new GridFx(document.querySelector('.grid'), {
+				imgPosition : {
+					x : -0.5,
+					y : 1
+				},
+				onOpenItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							var delay = Math.floor(Math.random() * 50);
+							el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+							el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+							el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
+							el.style.transform = 'scale3d(0.1,0.1,1)';
+							el.style.opacity = 0;
+						}
+					});
+				},
+				onCloseItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
+							el.style.transition = 'opacity .4s, transform .4s';
+							el.style.WebkitTransform = 'scale3d(1,1,1)';
+							el.style.transform = 'scale3d(1,1,1)';
+							el.style.opacity = 1;
+
+							onEndTransition(el, function() {
+								el.style.transition = 'none';
+								el.style.WebkitTransform = 'none';
+							});
+						}
+					});
+				}
+			});
+		})();
+	</script>
+</html>

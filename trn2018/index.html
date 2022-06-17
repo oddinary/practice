@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat:200|Press+Start+2P|Quicksand:300" rel="stylesheet">
+<title>nevertheless</title>
+  <!--[if lt IE 9]>
+      <script src="./js/html5.js"></script>
+   <![endif]-->
+<link href="css/common.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+   $(function(){
+        $('#navi li').each(function(){
+       var allLi = $(this).find('a');
+       $('#navi li a').click(function(){
+         allLi.removeClass('on');
+         $(this).addClass('on')
+       })
+     })
+  });
+  $(function(){
+    $('#go-project').click(function() {
+     $('#project').stop().animate({left:0},1000);
+     $('#about').stop().animate({left:'100%'},1000);
+     $('#contact').stop().animate({left:'200%'},1000);
+    });
+    $('#go-about').click(function() {
+     $('#project').stop().animate({left:'-100%'},1000);
+     $('#about').stop().animate({left:0},1000);
+     $('#contact').stop().animate({left:'100%'},1000);
+    });
+    $('#go-contact').click(function() {
+     $('#project').stop().animate({left:'-200%'},1000);
+     $('#about').stop().animate({left:'-100%'},1000);
+     $('#contact').stop().animate({left:0},1000);
+    });
+  })
+
+</script>
+</head>
+
+<body>
+<div id="wrap">
+  <header id="header">
+    <div id="title">
+    <a href="#"><h2>NEVERTHELESS</h2></a>
+    </div>
+    <div id="me">
+    <h1>Jin ho Lee</h1>
+    <p>- design & code</p>
+    </div>
+  </header>
+  <section id="section">
+     <ul id="navi">
+      <li><a id="go-project">Project</a></li>
+      <li><a id="go-about">About</a></li>
+      <li><a id="go-contact">Contact</a></li>
+    </ul>
+    <hr>
+    <div id="project">
+      <ul>
+        <li><a href="sub_graphic.html">Graphic</a></li>
+        <li><a href="sub_web.html">Web</a></li>
+        <li><a href="sub_ui.html">UI</a></li>
+     </ul>
+   </div>
+    <div id="about">
+      <h3>About</h3>
+     <ul>
+        <li>birth : 92.12.3</li>
+        <li>major : 계명대학교 패션디자인</li>
+        <li>Call : +82)10-2027-4039</li>
+        <li><img src="img/program.png"></li>
+      </ul>
+    </div>
+    <div id="contact">
+      <h3>Contact</h3>
+      <ul>
+        <li>E-mail : horang1203@gmail.com</li>
+        <li>Call : +82) 010-2027-4039</li>
+        <li>kakao : hosik92</li>
+      </ul>
+    </div>
+    </section>
+    <hr>
+    <footer id="footer"></footer>
+</div><!--wrap-->
+</body>
+
+</html>

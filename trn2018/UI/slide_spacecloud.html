@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat:200|Press+Start+2P|Quicksand:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat:200|Press+Start+2P|Quicksand:300" rel="stylesheet">
+<title>UI slide</title>
+  <!--[if lt IE 9]>
+      <script src="./js/html5.js"></script>
+   <![endif]-->
+<link href="css/common.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+  $(function(){
+    $(".btn_slides_next").click(function(){
+
+      if(!$("#slides li").last().is(":visible")){
+        $("#slides li:visible").hide().next("li").fadeIn("40");
+        $(".btn_slides_prev").removeClass("off");
+      }
+
+      if($("#slides li").last().is(":visible")){
+        $('.btn_slides_next').addClass('off');
+      }
+      return false;
+    });
+    $(".btn_slides_prev").click(function(){
+
+      if(!$("#slides li").first().is(":visible")){
+        $("#slides li:visible").hide().prev("li").fadeIn("40");
+        $(".btn_slides_next").removeClass("off");
+      }
+
+      if($("#slides li").first().is(":visible")){
+        $('.btn_slides_prev').addClass("off");
+      }
+      return false;
+    });
+  });
+  $(function(){
+    $('#back').hover(
+     function(){$(this).css('color','#355c7d')},
+     function(){$(this).css('color','#f67280')}
+     );
+  })
+</script>
+</head>
+
+<body>
+<div id="wrap">
+     <div id="back">
+          <a href="../sub_ui.html">BACK</a>
+     </div>
+  <div id="imageslide">
+<!--버튼식 슬라이드의 경우 다음과 같은 구조-->
+  <div class="imgs">
+     <ul id="slides">    
+      <li><img src="img/spacecloud/spacecloud_1.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_2.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_3.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_4.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_5.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_6.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_7.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_8.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_9.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_10.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_11.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_12.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_13.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_14.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_15.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_16.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_17.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_18.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_19.png" alt="spacecloudapp"></li><li><img src="img/spacecloud/spacecloud_20.png" alt="spacecloudapp"></li>
+   </div>
+    <div id="btn_slides">
+      <div id="left">
+      <a href="#" class="btn_slides_prev off" ><img src="img/left_on.png"></a>
+      </div>
+      <div id="right">
+      <a href="#" class="btn_slides_next"><img src="img/right_on.png" id="right"></a></a>
+      </div>
+    </div>
+</div>
+</div><!--wrap-->
+</body>
+
+</html>
