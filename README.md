@@ -1,7 +1,5 @@
 # oddinary.github.io
 
-이진호 깃허브
-
 oddinary.github.io/trn00 에 들어가시면 html 연습했던파일들이 있습니다.
 
 5월17일 부터는 
