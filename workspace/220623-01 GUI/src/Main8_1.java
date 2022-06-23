@@ -11,13 +11,16 @@ import javax.swing.*;
 // 다 되면 다시 하는 기능도 만들어 보기
 public class Main8_1 extends JFrame {
 	int a; 
-	int b; 
+	int b;
+	private int count = 0; 
 	public Main8_1() {
+		super("퀴즈퀴즈");
+
 		Random r = new Random();
 		 a = r.nextInt(9) + 1;
 		 b = r.nextInt(9) + 1;
-		
 		JLabel lbl = new JLabel(a + " + " + b + " = ? ");
+		JLabel score = new JLabel("점수: " + count);		
 		JTextField tf = new JTextField(20);
 		JButton btn1 = new JButton("제출");
 		JButton btnRE = new JButton("다시");
@@ -26,6 +29,7 @@ public class Main8_1 extends JFrame {
 		JPanel pnlBottom = new JPanel();
 		JPanel pnlResult = new JPanel();
 		JPanel pnlBox = new JPanel();
+		JPanel pnlscore = new JPanel();
 
 		BoxLayout box = new BoxLayout(pnlBox, BoxLayout.Y_AXIS);
 		pnlBox.setLayout(box);
@@ -40,6 +44,8 @@ public class Main8_1 extends JFrame {
 					pnlResult.setBackground(Color.green);
 					btn1.setVisible(false);
 					btnRE.setVisible(true);
+					count++;
+					score.setText("점수: " + count);
 				} else {
 					lblResult.setText("오답");
 					pnlResult.setBackground(Color.red);
@@ -64,9 +70,10 @@ public class Main8_1 extends JFrame {
 				
 			}
 		});
-
+		pnlscore.add(score);
 		pnlResult.add(lblResult);
 		pnlTop.add(lbl);
+		pnlTop.add(pnlscore);
 		pnlBottom.add(tf);
 		pnlBottom.add(btn1);
 		pnlBottom.add(btnRE);
