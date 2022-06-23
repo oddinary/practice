@@ -1,4 +1,4 @@
-#<a href ="https://oddinary.github.io/trn00">oddinary.github.io/trn00</a>
+# <a href ="https://oddinary.github.io/trn00">oddinary.github.io/trn00</a>
 
 oddinary.github.io/trn00에 들어가시면 html 연습했던파일들이 있습니다.
 
