@@ -1,4 +1,3 @@
-
 public class Info {
 	private String ID;
 	private String Password;
