@@ -1,6 +1,6 @@
-# <a href ="https://oddinary.github.io/practice/trn00">oddinary.github.io/trn00</a>
+# <a href ="https://oddinary.github.io/practice/trn00">oddinary.github.io/practice/trn00</a>
 
-You can see my practice file and portfolio(2018) on oddinary.github.io/trn00.
+You can see my practice file and portfolio(2018) on oddinary.github.io/practice/trn00.
 
 Java <br>
 5 / 17 ~  <br>
